@@ -1,0 +1,11 @@
+from django.db import models
+import django.contrib.auth.models as authmodels
+import django.forms as forms
+import django.contrib.admin.sites as sites
+from django.contrib import admin
+from django.conf import settings
+import time
+
+# Create your models here.
+class Email(models.Model):
+    address = models.CharField(maxlen=250)
